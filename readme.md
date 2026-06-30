@@ -4,14 +4,16 @@ Minimal CLI to decode QR codes from image files and print the text to stdout.
 
 ## Install
 
+Run without installing:
+
 ```bash
-go install github.com/xeptore/unqr@latest
+go run github.com/xeptore/unqr@latest path/to/qrcode.png
 ```
 
-Or build from source:
+Or by installing it:
 
 ```bash
-go build -o unqr .
+go install github.com/xeptore/unqr@latest
 ```
 
 Pre-built binaries are available on the [Releases](https://github.com/xeptore/unqr/releases) page.
