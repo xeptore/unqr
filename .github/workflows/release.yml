@@ -89,7 +89,7 @@ jobs:
             -o "dist/${OUTPUT}" \
             .
 
-          ARCHIVE="${{ env.BINARY_NAME }}_${{ github.ref_name }}_${{ matrix.goos }}_${{ matrix.goarch }}"
+          ARCHIVE="${{ env.BINARY_NAME }}_${{ matrix.goos }}_${{ matrix.goarch }}"
           if [ "${{ matrix.goos }}" = "windows" ]; then
             (cd dist && zip "../dist/${ARCHIVE}.zip" "${OUTPUT}")
           else
