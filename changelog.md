@@ -2,6 +2,12 @@
 
 This project uses simple versioning: `v1`, `v2`, `v3`, and so on.
 
+## v3
+
+Fixed:
+
+- Release workflow artifact upload path now matches archive names (removes leftover tag prefix from v2)
+
 ## v2
 
 Changed:
