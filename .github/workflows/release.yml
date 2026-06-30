@@ -100,7 +100,7 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: ${{ env.BINARY_NAME }}_${{ matrix.goos }}_${{ matrix.goarch }}
-          path: dist/${{ env.BINARY_NAME }}_${{ github.ref_name }}_${{ matrix.goos }}_${{ matrix.goarch }}.*
+          path: dist/${{ env.BINARY_NAME }}_${{ matrix.goos }}_${{ matrix.goarch }}.*
           if-no-files-found: error
 
   release:
