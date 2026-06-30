@@ -2,6 +2,17 @@
 
 This project uses simple versioning: `v1`, `v2`, `v3`, and so on.
 
+## v2
+
+Changed:
+
+- Release workflow now triggers only on simple version tags (`v1`, `v2`, …) instead of any `v*` tag
+- Release archive names no longer include the version prefix (e.g. `unqr_linux_amd64.tar.gz` instead of `unqr_v1_linux_amd64.tar.gz`)
+
+Maintenance:
+
+- Bump `actions/download-artifact` from v7 to v8
+
 ## v1
 
 Initial release including:
